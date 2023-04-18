@@ -146,7 +146,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -386,8 +386,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5974432324927230704}
   m_LocalRotation: {x: -0, y: -0, z: -0.11860826, w: 0.99294114}
-  m_LocalPosition: {x: 0.201, y: 0.281, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.259, y: 0.522, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9107558308957255908}
@@ -794,8 +794,8 @@ GameObject:
   - component: {fileID: 4997190819426097694}
   - component: {fileID: 5803511222778961985}
   - component: {fileID: -6132710281936758187}
-  - component: {fileID: 6058540415888170446}
   - component: {fileID: -8013786796099661022}
+  - component: {fileID: 6058540415888170446}
   m_Layer: 0
   m_Name: go_player
   m_TagString: Player
@@ -958,16 +958,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 321ddde461a6df44f82b713b4eae8fe9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 7086811663514419951}
   speedPlayerY: 5
-  jumpforse: 10
-  numberjumps: 1
-  chekGround: {fileID: 0}
+  jumpforse: 13
+  numberjumps: 2
+  chekGround: {fileID: 364633542366359181}
   whatGround:
     serializedVersion: 2
-    m_Bits: 0
-  chekRadius: 0
-  Anim: {fileID: 0}
+    m_Bits: 64
+  chekRadius: 0.2
+  Anim: {fileID: 6058540415888170446}
+--- !u!114 &-8013786796099661022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7086811663514419951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a006dd80c7000a54ea653f0e333c7bbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSlider: {fileID: 0}
+  startingHealth: 10
+  currentHealth: 10
+  GoDie: {fileID: 0}
+  AttackEnemy: {fileID: 0}
 --- !u!95 &6058540415888170446
 Animator:
   serializedVersion: 7
@@ -990,23 +1007,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-8013786796099661022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7086811663514419951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a006dd80c7000a54ea653f0e333c7bbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthSlider: {fileID: 0}
-  startingHealth: 0
-  currentHealth: 0
-  GoDie: {fileID: 0}
-  AttackEnemy: {fileID: 0}
 --- !u!1 &8043693788968440219
 GameObject:
   m_ObjectHideFlags: 0

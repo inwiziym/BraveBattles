@@ -38,10 +38,8 @@ public class EnemyHealthBarEasy : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D damageplayer)
     {
-        Debug.Log(damageplayer.tag);
         if (damageplayer.CompareTag("Attackshayrmech"))
         {
-            Debug.Log(damageplayer.tag);
             currentHealth -= 1;
             SetHealth(currentHealth);
         }

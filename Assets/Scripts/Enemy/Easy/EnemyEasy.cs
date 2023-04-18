@@ -1,4 +1,4 @@
-using UnityEngine;
+п»їusing UnityEngine;
 
 public class EnemyEasy : MonoBehaviour
 {
@@ -6,9 +6,9 @@ public class EnemyEasy : MonoBehaviour
     public float speed;
 
     public Animator Anim;
-
     float lastEnPosX = 0;
     bool lookLeft = true;
+
     private void FixedUpdate()
     {
         transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
@@ -17,18 +17,19 @@ public class EnemyEasy : MonoBehaviour
         if (lastEnPosX - transform.position.x < -0.01) lookLeft = false;
 
         if (lookLeft)
-            transform.localScale = new Vector3(-1f, 1f, 1f); // лево
+            transform.localScale = new Vector3(-1f, 1f, 1f); // пїЅпїЅпїЅпїЅ
         else
-            transform.localScale = new Vector3(1f, 1f, 1f); // право
+            transform.localScale = new Vector3(1f, 1f, 1f); // пїЅпїЅпїЅпїЅпїЅ
         lastEnPosX = transform.position.x;
     }
+
     float time = 0;
     public void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && time <= 0)
         {
             Anim.SetTrigger("isAttackArm");
-            time = 1;
+            time = 1;   
         }
         time -= Time.deltaTime;
     }
