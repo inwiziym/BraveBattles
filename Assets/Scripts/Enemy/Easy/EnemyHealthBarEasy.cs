@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+
 public class EnemyHealthBarEasy : MonoBehaviour
 {
     public Slider healthSlider;
@@ -8,13 +9,23 @@ public class EnemyHealthBarEasy : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
 
-    void Start()
+    void Awake()
     {
         SetMaxHealth(maxHealth);
         SetHealth(currentHealth);
     }
 
+    void Start()
+    {
+        SetHealthSliderPosition();
+    }
+
     void Update()
+    {
+        SetHealthSliderPosition();
+    }
+
+    void SetHealthSliderPosition()
     {
         healthSlider.transform.position = Camera.main.WorldToScreenPoint(enemyTransform.position + offset);
     }

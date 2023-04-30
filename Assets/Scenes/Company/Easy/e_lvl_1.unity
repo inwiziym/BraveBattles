@@ -401,55 +401,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &342304320
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 342304322}
-  - component: {fileID: 342304321}
-  m_Layer: 0
-  m_Name: go_spawner_R
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &342304321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342304320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 610792cfbfa1abb4283238df754f006a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 7086811663514419951, guid: cde329b5e81e21e4691bc8b7b9f07767, type: 3}
-  spawnInterval: 3
-  pointSpawnX: 15
-  pointSpawnY: -6.5
---- !u!4 &342304322
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342304320}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &450395877
 PrefabInstance:
@@ -754,7 +706,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &929747793
 GameObject:
@@ -767,7 +719,7 @@ GameObject:
   - component: {fileID: 929747795}
   - component: {fileID: 929747794}
   m_Layer: 0
-  m_Name: go_spawner_L
+  m_Name: go_spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -786,9 +738,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 7086811663514419951, guid: cde329b5e81e21e4691bc8b7b9f07767, type: 3}
-  spawnInterval: 3
-  pointSpawnX: -15
-  pointSpawnY: -6.5
+  spawnInterval: 10
+  pointSpawnX1: -3
+  pointSpawnY1: -6
+  pointSpawnX2: 15
+  pointSpawnY2: -6
+  maxEnemyScene: 2
 --- !u!4 &929747795
 Transform:
   m_ObjectHideFlags: 0
