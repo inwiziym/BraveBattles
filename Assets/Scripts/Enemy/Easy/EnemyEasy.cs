@@ -11,6 +11,7 @@ public class EnemyEasy : MonoBehaviour
 
     private void FixedUpdate()
     {
+        player = GameObject.FindGameObjectsWithTag("Player")[0].GetComponent<Transform>();
         transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
 
         if (lastEnPosX - transform.position.x > 0.01) lookLeft = true;
@@ -29,8 +30,10 @@ public class EnemyEasy : MonoBehaviour
         if (collision.CompareTag("Player") && time <= 0)
         {
             Anim.SetTrigger("isAttackArm");
-            time = 1;   
+            time = 1;
         }
         time -= Time.deltaTime;
     }
+
+    
 }

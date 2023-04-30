@@ -1,28 +1,27 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class EnemySpawn : MonoBehaviour
 {
-    public GameObject enemyPrefab; // префаб противника
-    public int maxEnemyCount = 5; // максимальное количество противников на уровне
-    private int currentEnemyCount = 0; // текущее количество противников на уровне
+    public GameObject enemyPrefab; // префаб врага
+    public float spawnInterval = 15f; // интервал спавна врагов
 
-    private void Start()
-    {
-        SpawnEnemy();
-    }
+    private float timer = 0f;
 
-    private void SpawnEnemy()
+    void Update()
     {
-        if (currentEnemyCount < maxEnemyCount)
+        timer += Time.deltaTime;
+
+        if (timer >= spawnInterval)
         {
-            Vector2 spawnPosition = new Vector2(Random.Range(-5f, 5f), Random.Range(-5f, 5f)); // случайная точка спавна
-            Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
-            currentEnemyCount++;
+            SpawnEnemy();
+            timer = 0f;
         }
     }
 
-    public void DecreaseEnemyCount()
+    void SpawnEnemy()
     {
-        currentEnemyCount--;
+        Instantiate(enemyPrefab, transform.position, Quaternion.identity);
     }
 }

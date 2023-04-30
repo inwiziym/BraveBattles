@@ -1045,8 +1045,8 @@ GameObject:
   - component: {fileID: 721711079696538051}
   - component: {fileID: 8678960927865873411}
   - component: {fileID: 5716682773533031517}
-  - component: {fileID: 3322219603366660653}
   - component: {fileID: -3651138732432930022}
+  - component: {fileID: 3322219603366660653}
   - component: {fileID: 3235154759089674260}
   m_Layer: 0
   m_Name: go_enemyeasy
@@ -1075,8 +1075,8 @@ Transform:
   - {fileID: 9107558308957255908}
   - {fileID: 5652999740933205086}
   - {fileID: 5931285492095087018}
-  - {fileID: 6617983446908039496}
   - {fileID: 5045242390755716704}
+  - {fileID: 6617983446908039496}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1153,6 +1153,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-3651138732432930022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7086811663514419951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40b18de6b4b6a3245907c5df5da608cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 721711079696538051, guid: 89db08d61324d2149ac8794550aa0988, type: 3}
+  speed: 3
+  Anim: {fileID: 3235154759089674260}
 --- !u!114 &3322219603366660653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1170,21 +1185,6 @@ MonoBehaviour:
   offset: {x: 0, y: 1.4, z: 0}
   maxHealth: 5
   currentHealth: 5
---- !u!114 &-3651138732432930022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7086811663514419951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40b18de6b4b6a3245907c5df5da608cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 721711079696538051, guid: 89db08d61324d2149ac8794550aa0988, type: 3}
-  speed: 3
-  Anim: {fileID: 3235154759089674260}
 --- !u!95 &3235154759089674260
 Animator:
   serializedVersion: 7
