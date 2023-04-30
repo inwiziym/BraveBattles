@@ -9,7 +9,6 @@ public class PlayerHealth : MonoBehaviour
     public GameObject GoDie;
     public Animator AttackEnemy;
 
-
     void Start()
     {
         currentHealth = startingHealth;

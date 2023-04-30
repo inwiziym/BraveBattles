@@ -6,6 +6,8 @@ public class EnemySpawn : MonoBehaviour
 {
     public GameObject enemyPrefab; // префаб врага
     public float spawnInterval = 15f; // интервал спавна врагов
+    public float pointSpawnX;
+    public float pointSpawnY;
 
     private float timer = 0f;
 
@@ -22,6 +24,6 @@ public class EnemySpawn : MonoBehaviour
 
     void SpawnEnemy()
     {
-        Instantiate(enemyPrefab, transform.position, Quaternion.identity);
+        Instantiate(enemyPrefab, new Vector2(pointSpawnX, pointSpawnY), Quaternion.identity);
     }
 }
