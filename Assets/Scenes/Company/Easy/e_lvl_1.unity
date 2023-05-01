@@ -1068,9 +1068,9 @@ MonoBehaviour:
   enemyPrefab: {fileID: 7086811663514419951, guid: cde329b5e81e21e4691bc8b7b9f07767, type: 3}
   spawnInterval: 13
   pointSpawnX1: -15
-  pointSpawnY1: -6
+  pointSpawnY1: -7
   pointSpawnX2: 15
-  pointSpawnY2: -6
+  pointSpawnY2: -7
   enemiesContainer: {fileID: 929747793}
 --- !u!4 &929747795
 Transform:

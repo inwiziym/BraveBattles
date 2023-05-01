@@ -9,6 +9,10 @@ public class EnemyHealthBarEasy : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
 
+    public GameObject grearsPlayer;
+
+    private bool hasDroppedCoin = false; // Флаг, который показывает, выпала ли монета
+
     void Awake()
     {
         SetMaxHealth(maxHealth);
@@ -43,7 +47,12 @@ public class EnemyHealthBarEasy : MonoBehaviour
         healthSlider.value = health;
         if (health <= 0)
         {
-            Die();
+            if (!hasDroppedCoin) // Проверяем, выпала ли монета
+            {
+                Instantiate(grearsPlayer, transform.position, Quaternion.identity, null);
+                hasDroppedCoin = true; // Устанавливаем флаг, что монета выпала
+            }
+            Destroy(gameObject);
         }
     }
 
@@ -59,10 +68,5 @@ public class EnemyHealthBarEasy : MonoBehaviour
             currentHealth -= maxHealth;
             SetHealth(currentHealth);
         }
-    }
-
-    void Die()
-    {
-        Destroy(gameObject);
     }
 }

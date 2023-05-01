@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 381758685289003250}
   - component: {fileID: 7336542641205568729}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: im_enemy_eyeR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1509852644835789270}
   - component: {fileID: 5416120524035576519}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: im_enemy_armL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 2935732570920299306}
   - component: {fileID: 201395862995972793}
   - component: {fileID: 3452460684143956639}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Background_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1415620298236587949}
   - component: {fileID: 5687502035041758760}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: im_enemy_cap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +372,7 @@ GameObject:
   - component: {fileID: 3307219719149438878}
   - component: {fileID: 1136225394203122296}
   - component: {fileID: 6914028857930187210}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -474,7 +474,7 @@ GameObject:
   - component: {fileID: 5862311390314658418}
   - component: {fileID: 2362189398030174286}
   - component: {fileID: 8139069387789537786}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -548,7 +548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3204240493451118392}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 4513346213999884887}
   - component: {fileID: 6866802869638968124}
   - component: {fileID: 5835659383110891136}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: Background_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -662,7 +662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5931285492095087018}
   - component: {fileID: 5772180856900286573}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: im_enemy_legR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -746,9 +746,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5045242390755716704}
   - component: {fileID: 7495566589982013367}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: go_attackanim
-  m_TagString: EnemyAttack
+  m_TagString: EnemyAttackEasy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -824,7 +824,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5652999740933205086}
   - component: {fileID: 1957273730286182896}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: im_enemy_legL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -908,7 +908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6269332934792342298}
   - component: {fileID: 7430107607804202993}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: im_enemy_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -992,7 +992,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3956235106637879817}
   - component: {fileID: 929970149582266802}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: im_enemy_eyeL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1080,7 +1080,7 @@ GameObject:
   - component: {fileID: -3651138732432930022}
   - component: {fileID: 3322219603366660653}
   - component: {fileID: 3235154759089674260}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: go_enemyeasy
   m_TagString: EnemyEasy
   m_Icon: {fileID: 0}
@@ -1198,7 +1198,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40b18de6b4b6a3245907c5df5da608cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 721711079696538051, guid: 89db08d61324d2149ac8794550aa0988, type: 3}
   speed: 3
   Anim: {fileID: 3235154759089674260}
 --- !u!114 &3322219603366660653
@@ -1218,6 +1217,7 @@ MonoBehaviour:
   offset: {x: 0, y: 1.4, z: 0}
   maxHealth: 5
   currentHealth: 5
+  grearsPlayer: {fileID: 3468033812374985003, guid: 6d9d6661cca64474aba21cfac47e790e, type: 3}
 --- !u!95 &3235154759089674260
 Animator:
   serializedVersion: 7
@@ -1381,7 +1381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9107558308957255908}
   - component: {fileID: 686527658042664696}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: im_enemy_armR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1465,7 +1465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4019223543648482717}
   - component: {fileID: 3806466633599142178}
-  m_Layer: 5
+  m_Layer: 9
   m_Name: slider_health_enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class EnemyEasy : MonoBehaviour
 {
-    public Transform player;
     public float speed;
     public Animator Anim;
-
     float lastEnPosX = 0;
     bool lookLeft = true;
     bool isPlayerAnim = false;
@@ -39,6 +38,11 @@ public class EnemyEasy : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isPlayerAnim = true;
+        }
+        else if (collision.gameObject.layer == LayerMask.NameToLayer("Coin"))
+        {
+            // игнорирование столкновения со слоем Coin
+            Physics2D.IgnoreCollision(GetComponent<Collider2D>(), collision);
         }
     }
 

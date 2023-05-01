@@ -9,6 +9,8 @@ TagManager:
   - Attackshayrmech
   - EnemyAttackEasy
   - HELL
+  - EnemyAttack
+  - GrearsPlayer
   layers:
   - Default
   - TransparentFX
@@ -17,9 +19,9 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
-  - 
-  - 
+  - Player
+  - Coin
+  - Enemy
   - 
   - 
   - 
