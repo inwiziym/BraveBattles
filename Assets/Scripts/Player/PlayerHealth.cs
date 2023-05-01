@@ -23,7 +23,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D damageenemy)
     {
-        if (damageenemy.CompareTag("EnemyAttack") && !isTakingDamage)
+        if (damageenemy.CompareTag("EnemyAttackEasy") && !isTakingDamage)
         {
             isTakingDamage = true;
             currentHealth--;
@@ -34,6 +34,15 @@ public class PlayerHealth : MonoBehaviour
                 Destroy(MainPlayer);
             }
             StartCoroutine(ResetTakingDamageFlag());
+        }
+
+        if (damageenemy.CompareTag("HELL"))
+        {
+            isTakingDamage = true;
+            currentHealth = 0; // Обновляем количество жизней на 0
+            healthSlider.value = currentHealth;
+            GoDie.SetActive(true); // Активируем объект сразу, так как игрок умирает
+            Destroy(MainPlayer); // Удаляем игрока
         }
     }
 

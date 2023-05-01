@@ -20,7 +20,7 @@ public class EnemyHealthBarEasy : MonoBehaviour
         SetHealthSliderPosition();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         SetHealthSliderPosition();
     }
@@ -52,6 +52,11 @@ public class EnemyHealthBarEasy : MonoBehaviour
         if (damageplayer.CompareTag("Attackshayrmech"))
         {
             currentHealth -= 1;
+            SetHealth(currentHealth);
+        }
+        if (damageplayer.CompareTag("HELL"))
+        {
+            currentHealth -= maxHealth;
             SetHealth(currentHealth);
         }
     }
