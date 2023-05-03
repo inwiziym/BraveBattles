@@ -215,7 +215,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      im_clounds_0: 2674114239985296252
+      im_clounds_1: -9011396220245112863
+      im_clounds_2: 2680857314416268299
+      im_clounds_3: 2118531844465357113
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
