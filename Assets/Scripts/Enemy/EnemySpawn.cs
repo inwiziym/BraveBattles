@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using System.Collections;
 public class EnemySpawn : MonoBehaviour
 {
     public GameObject enemyPrefab; // префаб врага
@@ -16,7 +16,7 @@ public class EnemySpawn : MonoBehaviour
 
     void Start()
     {
-        SpawnEnemy();
+        StartCoroutine(SpawnEnemyStart());
     }
 
     void Update()
@@ -43,5 +43,10 @@ public class EnemySpawn : MonoBehaviour
         // устанавливаем родительский объект для созданных врагов
         enemy1.transform.SetParent(enemiesContainer.transform);
         enemy2.transform.SetParent(enemiesContainer.transform);
+    }
+    IEnumerator SpawnEnemyStart()
+    {
+        yield return new WaitForSeconds(2f);
+        SpawnEnemy();
     }
 }

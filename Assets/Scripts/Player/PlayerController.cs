@@ -65,22 +65,22 @@ public class PlayerController : MonoBehaviour
         rightMove = false; //невозможно движени€ влево
     }
 
-    public void Jump()
+    public void Jump() //публична€ функиц€ дл€ прыжка
     {
         countJump--; //отнимает доступное количество доступных прыжков
         if(countJump > 0) //если прыжков больше нул€ то совершаетс€ функци€ прыжка
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpforse);
+            rb.velocity = new Vector2(rb.velocity.x, jumpforse); //происходит сила прыжка
         }
-        else if (countJump == 0 && isGround)
+        else if (countJump == 0 && isGround) //если количество прыжков меньше и нет земли
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpforse);
+            rb.velocity = new Vector2(rb.velocity.x, jumpforse); //происходит сила прыжка
         }
     }
 
-    public void PlayAttack()
+    public void PlayAttack() //публична€ функци€ дл€ атаки
     {
-        Anim.SetTrigger("PlayAttack");
+        Anim.SetTrigger("PlayAttack"); //проигрывание аттаки
     }
 
     private void FixedUpdate() //приватна€ функци€ Update
