@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 6687750736871447411}
   - component: {fileID: 1260705375783473605}
   - component: {fileID: -6436089693185423891}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: p_triangle
-  m_TagString: EnemyAttackEasy
+  m_TagString: EnemyTriangle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class EnemyHealthBarEasy : MonoBehaviour
 {
@@ -8,19 +9,15 @@ public class EnemyHealthBarEasy : MonoBehaviour
     public Vector3 offset;
     public int maxHealth;
     public int currentHealth;
-
+    private bool isTakingDamage = false;
     public GameObject grearsPlayer;
 
     private bool hasDroppedCoin = false; // Флаг, который показывает, выпала ли монета
 
-    void Awake()
+    void Start()
     {
         SetMaxHealth(maxHealth);
         SetHealth(currentHealth);
-    }
-
-    void Start()
-    {
         SetHealthSliderPosition();
     }
 
@@ -58,15 +55,24 @@ public class EnemyHealthBarEasy : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D damageplayer)
     {
-        if (damageplayer.CompareTag("Attackshayrmech"))
+        if ((damageplayer.CompareTag("Attackshayrmech") || (damageplayer.CompareTag("EnemyTriangle"))) && !isTakingDamage)
         {
-            currentHealth -= 1;
+            isTakingDamage = true;
+            currentHealth--;
             SetHealth(currentHealth);
         }
+        StartCoroutine(ResetTakingDamageFlag());
+
         if (damageplayer.CompareTag("HELL"))
         {
             currentHealth -= maxHealth;
             SetHealth(currentHealth);
         }
+    }
+
+    IEnumerator ResetTakingDamageFlag()
+    {
+        yield return new WaitForSeconds(0.1f);
+        isTakingDamage = false;
     }
 }

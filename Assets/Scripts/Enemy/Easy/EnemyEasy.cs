@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class EnemyEasy : MonoBehaviour
 {
@@ -9,16 +10,19 @@ public class EnemyEasy : MonoBehaviour
     bool lookLeft = true;
     bool isPlayerAnim = false;
 
+    float exitPlayerTime = 0f;
+    bool canMove = true;
     private void FixedUpdate()
     {
+        if (!canMove) return;
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
         if (playerObject != null)
         {
             Transform player = playerObject.GetComponent<Transform>();
             transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
 
-            if (lastEnPosX - transform.position.x > 0.03) lookLeft = true;
-            if (lastEnPosX - transform.position.x < -0.03) lookLeft = false;
+            if (lastEnPosX - transform.position.x > 0.02) lookLeft = true;
+            if (lastEnPosX - transform.position.x < -0.02) lookLeft = false;
 
             if (lookLeft)
                 transform.localScale = new Vector3(-1f, 1f, 1f);
@@ -39,9 +43,10 @@ public class EnemyEasy : MonoBehaviour
         {
             isPlayerAnim = true;
         }
-        else if (collision.gameObject.layer == LayerMask.NameToLayer("Coin"))
+
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Coin"))
         {
-            // игнорирование столкновения со слоем Coin
+
             Physics2D.IgnoreCollision(GetComponent<Collider2D>(), collision);
         }
     }
@@ -51,6 +56,8 @@ public class EnemyEasy : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isPlayerAnim = true;
+            exitPlayerTime = Time.time;
+            canMove = false;
         }
     }
     public void OnTriggerExit2D(Collider2D collision)
@@ -58,6 +65,13 @@ public class EnemyEasy : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             isPlayerAnim = false;
+        }
+    }
+    public void Update()
+    {
+        if (!canMove && Time.time - exitPlayerTime >= 0.5f)
+        {
+            canMove = true;
         }
     }
 }

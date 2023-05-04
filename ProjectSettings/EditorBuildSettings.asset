@@ -11,14 +11,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Company/Easy/e_lvl_1.unity
     guid: bc7b845f1f662f54db5ea49c6a4f8857
-  - enabled: 1
-    path: Assets/Scenes/MultyplayerLevels/loading.unity
-    guid: 75d6e39fcf9d9784d9c98524b5a25364
-  - enabled: 1
-    path: Assets/Scenes/MultyplayerLevels/lobby.unity
-    guid: 111bab5c9da4f224690bfeacab208970
-  - enabled: 1
-    path: Assets/Scenes/MultyplayerLevels/MainGame.unity
-    guid: a61355d6429b5a74faac50472d580ad5
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
