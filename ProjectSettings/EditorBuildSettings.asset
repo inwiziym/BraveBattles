@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Company/Easy/e_lvl_1.unity
     guid: bc7b845f1f662f54db5ea49c6a4f8857
+  - enabled: 1
+    path: Assets/Scenes/Company/Easy/e_lvl_2.unity
+    guid: 2b3c991eeaf2b324f992aa854470df13
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

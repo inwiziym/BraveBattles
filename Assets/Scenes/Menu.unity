@@ -1422,6 +1422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   indexScene: 1
+  randomScene: 0100000002000000
 --- !u!4 &1054705960
 Transform:
   m_ObjectHideFlags: 0
@@ -1643,7 +1644,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1054705959}
         m_TargetAssemblyTypeName: SceneManagerLoading, Assembly-CSharp
-        m_MethodName: LoadSceneIndex
+        m_MethodName: LoadRandomScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
