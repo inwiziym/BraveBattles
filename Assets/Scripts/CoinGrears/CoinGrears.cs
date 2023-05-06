@@ -3,19 +3,19 @@ using UnityEngine.UI;
 
 public class CoinGrears : MonoBehaviour
 {
-    public Text text;
-    public int money;
+    public Text coinText;
+    public int ñoinGrears;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("GrearsPlayer"))
         {
+            ñoinGrears++;
+            coinText.text = ñoinGrears.ToString();
             Destroy(collision.gameObject);
-            money++;
-            text.text = money.ToString();
         }
-        if (text != null)
+        if (coinText != null)
         {
-            text.text = money.ToString();
+            coinText.text = ñoinGrears.ToString();
         }
     }
 }
