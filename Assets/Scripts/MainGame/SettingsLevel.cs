@@ -1,5 +1,4 @@
 using UnityEngine;
-
 public class SettingsLevel : MonoBehaviour
 {
     public void Start()
