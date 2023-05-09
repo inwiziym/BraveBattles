@@ -1371,7 +1371,7 @@ GameObject:
   - component: {fileID: 929747795}
   - component: {fileID: 929747794}
   m_Layer: 0
-  m_Name: go_spawnerEnemyEasy
+  m_Name: go_spawnerEnemyEasyCop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1389,7 +1389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 610792cfbfa1abb4283238df754f006a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 7086811663514419951, guid: cde329b5e81e21e4691bc8b7b9f07767, type: 3}
+  enemyPrefab: {fileID: 7086811663514419951, guid: 67db8c83bae2b0844bc6accfa9d06792, type: 3}
   spawnInterval: 13
   pointSpawnX1: -15
   pointSpawnY1: -6.5
@@ -1652,31 +1652,31 @@ MonoBehaviour:
   m_ShadowVolumeIntensity: 0.75
   m_Vertices:
   - position: {x: 0.9985302, y: 0.9985302, z: 0}
-    color: {r: 0.70710677, g: 0.70710677, b: 0.390625, a: 0}
+    color: {r: 0.70710677, g: 0.70710677, b: 0.40625, a: 0}
     uv: {x: 0, y: 0}
   - position: {x: 0.9985302, y: 0.9985302, z: 0}
-    color: {r: 0, g: 0, b: 0.390625, a: 1}
+    color: {r: 0, g: 0, b: 0.40625, a: 1}
     uv: {x: 0, y: 0}
   - position: {x: -0.9985302, y: 0.9985302, z: 0}
-    color: {r: -0.70710677, g: 0.70710677, b: 0.390625, a: 0}
+    color: {r: -0.70710677, g: 0.70710677, b: 0.40625, a: 0}
     uv: {x: 0, y: 0}
   - position: {x: -0.9985302, y: 0.9985302, z: 0}
-    color: {r: 0, g: 0, b: 0.390625, a: 1}
+    color: {r: 0, g: 0, b: 0.40625, a: 1}
     uv: {x: 0, y: 0}
   - position: {x: -0.99853003, y: -0.9985304, z: 0}
-    color: {r: -0.70710665, g: -0.7071069, b: 0.390625, a: 0}
+    color: {r: -0.70710665, g: -0.7071069, b: 0.40625, a: 0}
     uv: {x: 0, y: 0}
   - position: {x: -0.99853003, y: -0.9985304, z: 0}
-    color: {r: 0, g: 0, b: 0.390625, a: 1}
+    color: {r: 0, g: 0, b: 0.40625, a: 1}
     uv: {x: 0, y: 0}
   - position: {x: 0.99853003, y: -0.9985304, z: 0}
-    color: {r: 0.70710665, g: -0.7071069, b: 0.390625, a: 0}
+    color: {r: 0.70710665, g: -0.7071069, b: 0.40625, a: 0}
     uv: {x: 0, y: 0}
   - position: {x: 0.99853003, y: -0.9985304, z: 0}
-    color: {r: 0, g: 0, b: 0.390625, a: 1}
+    color: {r: 0, g: 0, b: 0.40625, a: 1}
     uv: {x: 0, y: 0}
   - position: {x: 0, y: 0, z: 0}
-    color: {r: 0, g: 0, b: 0.390625, a: 1}
+    color: {r: 0, g: 0, b: 0.40625, a: 1}
     uv: {x: 0, y: 0}
   m_Triangles: 030001000800020000000100030002000100050003000800040002000300050004000300070005000800060004000500070006000500010007000800000006000700010000000700
   m_LocalBounds:

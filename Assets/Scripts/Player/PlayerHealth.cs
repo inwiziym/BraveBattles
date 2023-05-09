@@ -35,6 +35,19 @@ public class PlayerHealth : MonoBehaviour
                 Destroy(MainPlayer);
             }
         }
+        if ((damageenemy.CompareTag("EnemyEasyBullet")) && !isTakingDamage)
+        {
+            isTakingDamage = true;
+            currentHealth --;
+            currentHealth --;
+            healthSlider.value = currentHealth;
+            StartCoroutine(ResetTakingDamageFlag());
+            if (currentHealth <= 0)
+            {
+                GoDie.SetActive(true);
+                Destroy(MainPlayer);
+            }
+        }
 
         if (damageenemy.CompareTag("HELL") && !isTakingDamage)
         {

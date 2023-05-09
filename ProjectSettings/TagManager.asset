@@ -12,6 +12,7 @@ TagManager:
   - EnemyAttack
   - GrearsPlayer
   - EnemyTriangle
+  - EnemyEasyBullet
   layers:
   - Default
   - TransparentFX
