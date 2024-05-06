@@ -1,0 +1,11 @@
+# ninja log v5
+148	1277	7366751360900439	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	e2209c9f7d3fce48
+18	1821	7366751367362543	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	6b72f97123f0680
+0	1834	7366751369404714	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	8c1babc85ac813f5
+40	1835	7366751368540888	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	598fdf94884ac13e
+123	1836	7366751366660370	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	2fdeb3d7244758f6
+139	1837	7366751369510937	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	113328603cff52ba
+1279	1919	7366751368530887	D:/Project/UnityProject/BraveBattles/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/g224c4hs/obj/arm64-v8a/libswappywrapper.so	b59c92a3257dda37
+132	2107	7366751372835248	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	2a871edb91367be0
+26	2170	7366751373500116	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	8fbbe90e17cb239f
+2170	2379	7366751374750661	D:/Project/UnityProject/BraveBattles/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/g224c4hs/obj/arm64-v8a/libgame.so	3fb21e2f4beceda

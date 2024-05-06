@@ -3,16 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Enemy
-  - EnemyEasy
-  - Attackshayrmech
-  - EnemyAttackEasy
-  - HELL
-  - EnemyAttack
-  - GrearsPlayer
-  - EnemyTriangle
-  - EnemyEasyBullet
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -20,11 +11,11 @@ TagManager:
   - 
   - Water
   - UI
-  - Ground
-  - Player
-  - Coin
-  - Enemy
-  - Light
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
